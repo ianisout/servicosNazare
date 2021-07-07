@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Listar Servicos com Desconto</title>
+</head>
+<body>
+
+  <ul>
+    <% listaServicosComDesconto.forEach(itemServico => { %>
+      <li><!-- ID: <%= itemServico.id%> |  -->Descricao: <%= itemServico.desc%> | Preco: <%=itemServico.preco%></li>
+    <% }) %>
+  </ul>
+
+  <p>Deseja criar um novo servico?</p>
+  <a href="/servicos/criar">Criar</a>
+  
+</body>
+</html>
